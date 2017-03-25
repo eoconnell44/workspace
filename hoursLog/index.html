@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Work Hours Log</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato: 100,300,400,700|Luckiest+Guy|Oxygen:300,400" rel="stylesheet">
+  	<link href="css/main.css" type="text/css" rel="stylesheet">
+
+  	<link rel="stylesheet" type="text/css" media="screen" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/base/jquery-ui.css">
+
+  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
+	
+</head>
+<body>
+	<header>
+		<h1>Work Hours Log</h1>
+	</header>
+	<br>
+	<main>
+		<table>
+					<thead>
+						<tr>
+							<th>Day</th>
+							<th>Date</th>
+							<th id="hours">Hours</th>
+							<th>Minutes</th>
+							<th>Total</th>
+						</tr>
+					</thead>
+		<label>Day</label>
+		<select id="days">
+			<option>Monday</option>
+			<option>Tuesday</option>
+			<option>Wednesday</option>
+			<option>Thursday</option>
+			<option>Friday</option>
+			<option>Saturday</option>
+			<option>Sunday</option>
+		</select>
+		<!-- <label>Date</label>
+			<input id="date" placeholder="03-17-17"> -->
+		<label for="startDate">Date</label>
+    		<input name="startDate" id="startDate" class="date-picker" placeholder="March 28th">
+    	<label>Hours</label>	
+		<select id="hours">
+			<option>0</option>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+			<option>6</option>
+			<option>7</option>
+			<option>8</option>
+			<option>9</option>
+		</select>
+		<label>Minutes</label>
+		<select id="minutes">
+			<option>0</option>
+			<option>15</option>
+			<option>30</option>
+			<option>45</option>
+		</select>
+		<!-- <label>Total</label> -->
+		<button class="mainBtn">Submit</button>
+		</thead>
+	</main>
+	<section>
+		
+				<!-- <table>
+					<thead>
+						<tr>
+							<th>Day</th>
+							<th>Date</th>
+							<th id="hours">Hours</th>
+							<th>Minutes</th>
+							<th>Total</th>
+						</tr>
+					</thead> -->
+					<tfoot>
+						<tr>
+							<td id="workTotals" colspan='4'>Total</td>
+							<td id="sumTotal"></td>
+						</tr>
+					</tfoot>
+								
+
+					<tbody class="entries">
+					<script id="template" type="text/x-handlebards-v4.05.js">
+						<tr>
+							<td>{{day}}</td>
+							<td>{{date}}</td>
+							<td>{{hours}}</td>
+							<td>{{minutes}}</td>
+							<td>{{totalTime}}</td>
+						</tr>
+					</script>
+					</tbody>
+				</table>
+
+		
+	</section>
+	
+	</main>
+	<footer>
+		
+	</footer>
+
+	
+
+	<script src="js/handlebars-v4.0.5.js"></script>	
+	<script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+
+	<script src="js/jquery-3.0.0.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
