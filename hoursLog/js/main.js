@@ -12,6 +12,10 @@ $(document).ready();
 
   var hoursData = {};
 
+  //Need to find overall total 
+  //How to sort by most recent user input
+
+
   var totalTime;
 // On submit capture all user data and then push to db
   $('button').on('click', function(e){
