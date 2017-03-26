@@ -29,12 +29,18 @@ main {
 }
 .entryOptions {
 	overflow: auto;
-	width: 45%;
-    float: left;
+	width: 100%;
+
     margin: 1%;
     padding: 1px;
     min-height: 45px;
     min-width: 250px;
+}
+#leftSide {
+	float: left;
+}
+#rightSide {
+	float: right;
 }
 .button {
 	margin: 0 auto;
@@ -112,24 +118,31 @@ br {
 	display: none;
  }
 #startDate {
-	width: 30%;
+	width: 16%;
     height: 30px;
     padding: 1px;
     margin: 1%;
     font-size: 28px;
     font-family: 'Lato', sans-serif;
 }
+#days {
+	background-color: lightgray;
+	 height: 50px;
+    width: 20%;
+}
 #hours {
-    height: 36px;
-    width: 15%;
+    height: 40px;
+    width: 20%;
     padding: 1px;
     margin: 1%;
     font-family: 'Lato', sans-serif;
+    background-color: lightgray;
 }
 #minutes {
-    height: 36px;
-    width: 15%;
+    height: 40px;
+    width: 20%;
     padding: 1px;
     margin: 1%;
     font-family: 'Lato', sans-serif;
+    background-color: lightgray;
 }
